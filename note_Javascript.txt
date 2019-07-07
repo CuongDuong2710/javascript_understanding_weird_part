@@ -45,6 +45,12 @@ So it never set up the memory space.
 
 _ Never set 'a = undefined' -> cannot set anything, only use for debug
 
+----------------------------
+12 - The execution context
+
+_ First phase is 'creation phase' when it set up the variable and function in memory.
+_ Second phase is 'execution phase' when JavaScript engine compiling your code so computer understand.
+
 
 ----------------------------
 13 - Javascript is Single thread, Synchronous execution in its behavior
@@ -53,7 +59,7 @@ _ Single thread: one command at a time.
 
 _ Under hood of browser, maybe not.
 
-_ Synchronous: only one thing is happening at a time.
+_ Synchronous: only one thing is happening at a time, and in order...
 
 ----------------------------
 14 - Function invocation and The execution stack
