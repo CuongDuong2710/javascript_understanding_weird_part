@@ -8,7 +8,7 @@ function b() {
 }
 
 // --- Actual ----
-function b() { // move to top -> hoisting
+/* function b() { // move to top -> hoisting
     console.log('Called b')
 }
 var a // move declaration to top and placeholder is 'undefined' -> hoisting
@@ -16,3 +16,4 @@ var a // move declaration to top and placeholder is 'undefined' -> hoisting
 b()
 console.log(a) // undefined
 a = 'Hello World'
+ */

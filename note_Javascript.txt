@@ -38,7 +38,7 @@ function b() {
 ----------------------------
 11 - Javascript and undefined
 
-_ 'undefined': that means the variable hasn't been set. It's actually taking up memory space.
+_ 'undefined': special keyword in JavaScript - that means the variable hasn't been set. It's actually taking up memory space.
 
 _ Uncaught ReferenceError: a is not defined -> because that initial execution context creation (creation phase), when it went through it didn't find 'a' var.
 So it never set up the memory space.
