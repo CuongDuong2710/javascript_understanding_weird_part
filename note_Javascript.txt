@@ -27,7 +27,7 @@ _ All variables in Javascript are initially set to 'undefined', and functions ar
 _ Code:
 
 b(); // Called b!
-console.log(a); // undefined -> hoisting 
+console.log(a); // undefined -> hoisting only move top 'var a'
 
 var a = 'Hello World'; // delete this line -> Uncaught ReferenceError: a is not defined
 
