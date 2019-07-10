@@ -62,7 +62,16 @@ _ Under hood of browser, maybe not.
 _ Synchronous: only one thing is happening at a time, and in order...
 
 ----------------------------
-14 - Function invocation and The execution stack
+14 - Function invocation and The execution stack ***
+
+function b() {
+}
+
+function a() {
+	b()
+}
+
+a()
 
 _ b() finishes, because it's at the top of the stack, it will get popped off the stack.
 Then a(), then back down to Global Execution Context.
@@ -74,11 +83,12 @@ _ Everytime a function is invoked, even if it's invoking itself, a new execution
 When it finished, it popped off the stack.
 
 ----------------------------
-15 - Function, Context and Variable Environments
+15 - Function, Context and Variable Environments ***
 
 _ Variable environment: where the variables live (global object - a window in a browser).
 
-_ myVar declare three times -> they're distince, unique and don't touch each other. Each of these 'myVar' is sitting in its own execution context.
+_ Although 'myVar' declare three times -> they're distince, unique and don't touch each other. 
+Each of these 'myVar' is sitting in its own execution context.
 
 function b() {
     var myVar;
@@ -96,7 +106,7 @@ function a() {
 var myVar = 1;
 console.log(myVar); //1
 a();
-console.log('a:' + myVar); // a:1
+console.log('a:' + myVar); // a:1 - currently running code in global execution context
 
 ----------------------------
 16 - Scope chain
