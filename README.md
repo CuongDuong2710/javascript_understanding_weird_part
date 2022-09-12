@@ -1,0 +1,1 @@
+# Javascript Understanding Weird part
